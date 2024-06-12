@@ -16,6 +16,7 @@ gem "jbuilder"
 # gem "redis", ">= 4.0.1"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+gem "bcrypt", "~> 3.1.7"
 gem "inertia_rails"
 
 group :development, :test do
@@ -24,6 +25,9 @@ end
 
 group :development do
   gem "web-console"
+  gem "standard"
+  gem "rubocop"
+  gem "syntax_tree"
 end
 
 group :test do
